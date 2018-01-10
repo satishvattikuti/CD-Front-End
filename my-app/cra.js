@@ -13,7 +13,7 @@ const tagSha = execSync(
     }
 ).toString().trim()
 
-// This takes a sha and returns the tag name.
+// This takes a sha and returns the tag name
 const desc = execSync(
     `git describe --tags ${tagSha}`,
     {
